@@ -1,0 +1,67 @@
+.country {
+  padding: 3rem;
+  margin: 5rem auto;
+  width: 40vw;
+  height: 50vmin;
+  border-radius: 2rem;
+  background-color: #fcfcfc;
+  box-shadow: 0 0.62rem 2.5rem 0 rgba(112, 144, 176, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.flag {
+  grid-row: 1;
+  align-self: end;
+  background-color: Transparent;
+  object-fit: cover;
+  width: 100%;
+  box-shadow: 0 0.5rem 2.5rem 0 rgba(112, 144, 176, 0.2);
+}
+
+.country__name {
+  grid-row: 1;
+  grid-column: 2 / span 3;
+  align-self: end;
+  color: #333;
+}
+
+.name {
+  font-size: 4rem;
+}
+
+.region {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.info__row {
+  grid-column: 1 / span 3;
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.info__text {
+  width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #444;
+  font-size: 1.5rem;
+}
+
+.info__heading {
+  color: #888;
+  font-size: 1rem;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
